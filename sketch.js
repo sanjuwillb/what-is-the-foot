@@ -42,39 +42,51 @@ async function getBackgroundImg(){
     var x
     if (hour == 6 || hour == 7){
         x = 1
+        m = 1
     }
     if (hour == 8 || hour == 9){
         x = 2
+        m = 1
     }
     if (hour == 10 || hour == 11){
         x = 3
+        m = 1
     }
     if (hour == 12 || hour == 13){
         x = 4
+        m = 2
     }
     if (hour == 14 || hour == 15){
         x = 5
+        m = 2
     }
     if (hour == 16 || hour == 17){
         x = 6
+        m = 2
     }
     if (hour == 18 || hour == 19){
         x = 7
+        m = 2
     }
     if (hour == 20 || hour == 21){
         x = 8
+        m = 2
     }
     if (hour == 22 || hour == 23){
         x = 9
+        m = 2
     }
     if (hour == 24 || hour == 1){
         x = 10
+        m = 1
     }
     if (hour == 2 || hour == 3){
         x = 11
+        m = 1
     }
     if (hour == 4 || hour == 5){
         x = 12
+        m = 1
     }
     if (x == 1){
       backgroundImg = loadImage("sunrise1.png")
@@ -111,11 +123,5 @@ async function getBackgroundImg(){
     }
     if (x == 12){
       backgroundImg = loadImage("sunset12.png")
-    }
-    if (x > 9 || x < 4){
-      m = 2
-    }
-    if (x > 3 || x < 10){
-      m = 1
     }
 }
